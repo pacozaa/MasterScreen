@@ -1,0 +1,185 @@
+@import url(fonts/thsarabunnew.css);
+@media screen and (min-width: 800px) {
+/* Add your styles for devices with a minimum width of 750px */
+	#body_panel > div:nth-child(2) > div:nth-child(1){
+		float: left;
+		width:300px;
+	}
+
+	#body_panel > div:nth-child(2) > div:nth-child(2){
+		overflow: auto; 
+	}
+}
+
+
+body {
+   background: #CEE0F4;
+   min-height:100%;
+   min-width:100%;
+   /*font-family: sans-serif;
+   font-size: 13px;*/
+}
+
+
+
+#body_panel {
+    margin: 0px;
+    padding: 0px;
+}
+
+#body_panel > div:nth-child(1) {
+    background: #CEE0F4;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+#body_panel > div:nth-child(2) {
+    padding-bottom: 5px; 
+    padding-left: 5px; 
+    padding-right: 0px; 
+    padding-top: 5px; 
+    margin: 0px;
+}
+
+/* Bootstrap customization for paging */
+input.ui-pg-input {
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    line-height: normal
+}
+select.ui-pg-selbox {
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    line-height: normal
+}
+/* end Bootstrap customization */
+
+/* positioning jqgrid to center */
+.ui-jqgrid {
+    margin-left: auto;
+    margin-right: auto;
+    font-size:14px;
+}
+
+.ui-jqgrid .ui-jqgrid-view {
+   font-size:13px;
+}
+
+.panel-title {
+    font-size: 1.2em;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.badge-important{
+    background-color:#b94a48;
+}
+
+.required:after {
+  content:" *";
+  color:red;
+}
+
+.form-group {
+    padding: 0px;
+    margin:8px;
+}
+
+.form-group > div {
+    padding: 0px;
+    margin:0px;
+}
+
+.gly-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.gly-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.text-shadow{
+   text-shadow: black 5px 3px 3px;
+}
+
+.imageFlip {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+
+
+
+/*.btn-color1{background: #165b99;}
+.btn-color2{background: #00b6b5;}
+.mwa-color .color3 a{background: #abe1fa;}
+
+input[type=text] {
+   padding:0px 0px 0px 10px;
+}
+
+button[type=button] {
+   padding-button:0px;
+}*/

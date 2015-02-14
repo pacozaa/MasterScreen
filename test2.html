@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" ></link>
+  <link rel="stylesheet" href="jquery.navgoco.css" ></link>
+  <link rel="stylesheet" href="style.css" ></link>
+  <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="jquery.navgoco.min.js"></script>
+</head>
+<body">
+
+<div id="body_panel" class="panel panel-default">
+      <div class="panel-heading">
+        <h1>Hello World!</h1>
+		<p>Resize the browser window to see the effect.</p>
+      </div>
+    
+	<div class="panel-body well row" style="width:100%;height:100%;">
+		
+		<div>
+            <div id="menu_collapse"> 
+				<ul class="nav well" style="padding: 0px; margin: 0px;">
+					<li class="active" style="text-align:center; padding: 0px; margin: 0px;"><a style="background: #428bca; color: white; font-size:1.2em; height:37px; text-align:center; vertical-align:middle; line-height: 30px;">รายการ</a>	
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+						<span class="caret"></span>งานติดตั้งระบบประปา</a>
+						<ul class="dropdown-menu">
+						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+						  <li role="presentation" class="divider"></li>
+						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+						</ul>
+					</li>
+					<li class="test1"><a  class="dropdown-toggle" href="#">งานวางท่อ</a><ul class="nav"></li></ul>
+					<li class="test2"><a href="#" onclick="">การดำเนินการภาคสนามสำหรับมาตรวัดน้ำ</a></li>
+				</ul>
+				<p class="external">
+				<a href="#" id="collapseAll">ยุบเข้าทั้งหมด</a> | <a href="#" id="expandAll">ขยายออกทั้งหมด</a>
+				</p>
+			</div>
+        </div>
+		<div id="bodyright">
+			<div class="container" style="width:100%;">
+				<div class="panel panel-primary" id="form_body" style="margin-bottom: 5px;">
+					<div class="panel-heading"><h3 class="panel-title" id="heading">โปรแกรมการทำงาน</h3></div>
+					<div class="panel-body well" style="margin-bottom: 0px; padding-bottom: 0px;">
+					<form class="form-horizontal form-sm">
+						<fieldset class="fieldset well" id="barSearch">
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label">รหัสโปรแกรม</label>
+								<div class="col-xs-2 col-sm-2">
+									<input type="text" class="form-control input-sm" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+								<label class="col-xs-3 col-sm-3 control-label">คำอธิบาย</label>
+								<div class="col-xs-4 col-sm-4">
+									<input type="text" class="form-control input-sm" maxlength="50" name="requestGroupDescSrh" id="requestGroupDescSrh"/>
+								</div> 
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label">ระบบงาน</label>
+								<div class="col-xs-2 col-sm-2">
+									<input type="text" class="form-control input-sm" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+								<label class="col-md-3 control-label required">ประเภท&nbsp;</label>
+								<div class="col-md-2">
+									<select name="objectType" id="objectType" size="1" class="form-control input-sm">
+										<option value="">เลือกประเภท</option>
+										<option value="F">จอภาพ</option>
+										<option value="M">เมนู</option>
+										<option value="R">รายงาน</option>
+									</select>
+								</div> 
+							</div>
+                        </fieldset>
+						<fieldset class="fieldset well" id="barSearch">
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label required">ระบบงาน&nbsp;</label>
+								<div class="col-xs-2 col-sm-2">
+									<input type="text" class="form-control input-sm" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label">ภายใต้หัวข้อ</label>
+								<div class="col-xs-5 col-sm-5">
+									<input type="text" class="form-control input-sm" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label required">ประเภท&nbsp;</label>
+								<div class="col-md-2">
+									<select name="objectType" id="objectType" size="1" class="form-control input-sm">
+										<option value="">เลือกประเภท</option>
+										<option value="F">จอภาพ</option>
+										<option value="M">เมนู</option>
+										<option value="R">รายงาน</option>
+									</select>
+								</div> 
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label required">รหัสโปรแกรม&nbsp;</label>
+								<div class="col-xs-4 col-sm-4">
+									<input type="text" class="form-control input-sm" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label required">คำอธิบาย&nbsp;</label>
+								<div class="col-xs-5 col-sm-5">
+									<input type="text" class="form-control input-sm" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label">url</label>
+								<div class="col-xs-5 col-sm-5">
+									<input type="text" class="form-control input-sm" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">กำหนด Function การทำงาน</label>
+								<div class="col-md-1">
+									<div class="checkbox">
+									  <input type="checkbox" name="addIndicator" id="addIndicator" value=""></input>เพิ่ม
+									</div>
+								</div>
+								<div class="col-md-1">
+									<div class="checkbox" style="width:150px;">
+									  <input type="checkbox" name="inquiryIndicator" id="inquiryIndicator" value=""></input>ค้นหา
+									</div>
+								</div>
+								<div class="col-md-1">
+									<div class="checkbox">
+									  <input type="checkbox" name="updateIndicator" id="updateIndicator" value=""></input>แก้ไข
+									</div>
+								</div>
+								<div class="col-md-1">
+									<div class="checkbox">
+									  <input type="checkbox" name="deleteIndicator" id="deleteIndicator" value=""></input>ลบ
+									</div>
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">หมายเหตุ</label>
+								<div class="col-md-5">
+									<textarea class="form-control" maxlength="125" rows="2" placeholder="หมายเหตุ" cols="5"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">เลือกประเภท</label>
+								<div class="col-md-2">
+									<div class="radio">
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked">ประเภทที่1</input>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="radio">
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">ประเภทที่2</input>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="radio">
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">ประเภทที่3</input>
+									</div>
+								</div>	
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label">ลำดับที่</label>
+								<div class="col-xs-4 col-sm-4">
+									<input type="text" class="form-control input-sm" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label">วันที่เริ่มใช้งาน</label>
+								<div class="col-xs-2 col-sm-2">
+									<input type="text" class="form-control input-sm" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 col-sm-3 control-label">ผู้ทำรายการ</label>
+								<div class="col-xs-3 col-sm-3">
+									<input type="text" class="form-control input-sm ui-state-disabled" disabled="disabled" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+								<label class="col-xs-3 col-sm-3 control-label">วันที่ทำรายการ</label>
+								<div class="col-xs-3 col-sm-3">
+									<input type="text" class="form-control input-sm  ui-state-disabled" disabled="disabled" maxlength="2" name="requestGroupCodeSrh" id="requestGroupCodeSrh"/>
+								</div>
+							</div>
+							<div class"form-group">
+								<div align="center">
+									<button type="button" class="btn btn-primary input-sm" onclick="">บันทึก</button>
+									<button type="button" class="btn btn-primary input-sm" onclick="">ลบ</button>
+									<button type="reset" class="btn btn-primary input-sm" onclick="">ล้างข้อมูล</button>
+								</div>
+							</div>
+						</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+    
+  </div>
+</div>
+    
+</body>
+</html>
